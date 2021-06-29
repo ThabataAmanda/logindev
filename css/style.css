@@ -1,2 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+}
+
+header {
+    min-height: 9hv;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9c5ece;
+}
+
+header h1 {
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: #f5d7e3;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#aa7dce, #eee6f5);
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.30);
+}
+
+main form {
+    width: 35%;
+    height: 75vh;
+    margin-top: 3%;
+    background-color: #9c5ece;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    border-radius: 25px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form .inputs-container {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main form .inputs-container input {
+    width: 90%;
+    height: 35px;
+    padding: 8px 15px;
+    outline: 0;
+    border-radius: 10px;
+    border: 0;
+    font-size: 16px;
+    color: #3b429f;
+    box-shadow: 0px 3px 3px #f5d7e3;
+}
+
+main form .inputs-container input:focus {
+    box-shadow: inset 0px 4px 4px rgba(175, 99, 162, 0.7);
+}
+
+main form .password-container {
+    margin-top: 5%;
+    width: 100%;
+    position: realtive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form .password-container i {
+    position: absolute;
+    top: 32.5%;
+    right: 37%;
+    color: #a8577e;
+    cursor: pointer;
+}
+
+main form .password-container #eye {
+    display: none;
+}
